@@ -2,9 +2,12 @@
   "name": "yard-sale-react",
   "version": "1.0.0",
   "description": "React e-shop",
+  "homepage": "https://angyetr.github.io/yard-sale-react",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b gh-pages -d dist",
     "start": "webpack serve --open",
     "build": "webpack --mode production"
   },
@@ -34,6 +37,7 @@
   },
   "devDependencies": {
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "mini-css-extract-plugin": "^2.6.1",
     "sass": "^1.54.4",
     "sass-loader": "^13.0.2",
